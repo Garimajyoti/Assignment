@@ -1,0 +1,21 @@
+/*Implement the multi-level feedback queue scheduling algorithm: You can use the code of
+others to implement Round-Robin, and FCFS but implement aging by your own self */
+ 
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>  
+int main()
+{
+	int i,j,n,temp1,temp2,temp3;
+	printf("Enter the number of process: \n");
+	scanf("%d",&n);
+	int at[n],bt[n],ct[n];
+	for(i=0;i<n;i++)
+{
+		printf("Arrival time of the process\n");
+		scanf("%d",&at[i]);
+		printf("Burst time of the process\n");
+		scanf("%d",&bt[i]);
+		ct[i]=i+1;
+}
+ 
