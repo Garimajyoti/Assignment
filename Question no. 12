@@ -36,4 +36,18 @@ for(i=0;i<n;i++)
 			}
 		}
 	}
+	for(i=0;i<n;i++)
+	{
+		if(bt[i]>8)
+		{
+			bt[i]=bt[i]-8;
+			printf("Process %d ,time left is %d \n",ct[i],bt[i]);
+			
+		}
+		else
+		{
+			printf("Process %d , completed \n",ct[i]);
+			bt[i]=0;
+		}
+	}
  
