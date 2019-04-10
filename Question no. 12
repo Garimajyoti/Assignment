@@ -18,4 +18,22 @@ int main()
 		scanf("%d",&bt[i]);
 		ct[i]=i+1;
 }
+for(i=0;i<n;i++)
+	{
+		for(j=0;j<n-i-1;j++)
+		{
+			if(at[j]>at[j+1])
+			{
+				temp1=at[j+1];
+				at[j+1]=at[j];
+				at[j]=temp1;
+				temp2=bt[j+1];
+				bt[j+1]=bt[j];
+				bt[j]=temp2;
+				temp3=ct[j+1];
+				ct[j+1]=ct[j];
+				ct[j]=temp3;
+			}
+		}
+	}
  
