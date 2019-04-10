@@ -50,4 +50,18 @@ for(i=0;i<n;i++)
 			bt[i]=0;
 		}
 	}
+	for(i=0;i<n;i++)
+	{
+		if(bt[i]>16)
+		{
+			bt[i]=bt[i]-16;
+			printf("Process %d ,time left is %d \n",ct[i],bt[i]);
+			
+		}
+		else
+		{
+			printf("Process %d , completed \n",ct[i]);
+			bt[i]=0;
+		}
+	}
  
